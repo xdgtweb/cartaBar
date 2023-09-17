@@ -1,0 +1,71 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    display: block;
+    background-color: aquamarine;
+}
+
+.caja1
+{
+    display: flex;
+}
+
+#header
+{
+    background-color: black;
+    width: 150px;
+    height: 100vh;
+}
+
+#main
+{
+    display: block;
+    background-color: rgb(171, 171, 0);
+    width: 100%;
+}
+
+#footer
+{
+    background-color: gray;
+}
+
+header nav
+{
+    margin-left: auto;
+    margin-right: auto;
+    width: 80px;
+    text-align: center;
+}
+
+header nav a
+{
+    display: block;
+    font-family: 'letra1';
+    text-decoration: none;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+header #logo
+{
+    margin-left: 15px;
+    margin-right: 15px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100px;
+    height: auto;
+}
+
+@font-face {
+    font-family: 'letra1';
+    src: url('../fuenteLetra/BeachSound.otf') format('truetype');
+}

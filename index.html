@@ -4,35 +4,54 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to c
 Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
 -->
 <html>
-    <head id="head"></head>
-    <body>
-        <div class="caja1">
-            <header id="header"></header>
-            <main id="main"></main>
-        </div>
-        <footer id="footer"></footer>
+
+<head id="head"></head>
+
+<body>
+    <div class="caja1">
+        <header id="header"></header>
+        <main id="main"></main>
+    </div>
+    <footer id="footer"></footer>
+
+    <script src="js/headIndex.js"></script>
+    <script>
+        const head = document.getElementById('head');
+        head.innerHTML = headHTML;
+    </script>
+    <script src="js/headerIndex.js"></script>
+    <script>
+        const header = document.getElementById('header');
+        header.innerHTML = headerHTML;
+    </script>
+    <script src="js/mainIndex.js"></script>
+    <script>
+        const main = document.getElementById('main');
+        main.innerHTML = mainHTML;
+    </script>
+    <script src="js/footerIndex.js"></script>
+    <script>
+        const footer = document.getElementById('footer');
+        footer.innerHTML = footerHTML;
+    </script>
+
+    <script>
+
+        // Función para ajustar la altura del #header
+        function ajustarAlturaHeader() {
+            var windowHeight = window.innerHeight; // Obtiene la altura de la ventana del navegador
+            var header = document.getElementById('header'); // Obtiene el elemento #header
+
+            // Aplica la altura dinámica al #header
+            header.style.height = (windowHeight + -40.1) + 'px';
+        }
+
+        // Ejecuta la función cuando se carga la página y cuando se redimensiona la ventana
+        window.addEventListener('load', ajustarAlturaHeader);
+        window.addEventListener('resize', ajustarAlturaHeader);
 
 
+    </script>
+</body>
 
-        <script src="js/headIndex.js"></script>
-        <script>
-            const head = document.getElementById('head');
-            head.innerHTML = headHTML;
-        </script>
-        <script src="js/headerIndex.js"></script>
-        <script>
-            const header = document.getElementById('header');
-            header.innerHTML = headerHTML;
-        </script>
-        <script src="js/mainIndex.js"></script>
-        <script>
-            const main = document.getElementById('main');
-            main.innerHTML = mainHTML;
-        </script>
-        <script src="js/footerIndex.js"></script>
-        <script>
-            const footer = document.getElementById('footer');
-            footer.innerHTML = footerHTML;
-        </script>
-    </body>
 </html>

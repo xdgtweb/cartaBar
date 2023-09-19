@@ -1,13 +1,10 @@
 <!DOCTYPE html>
-<!--
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
--->
 <html>
 
 <head id="head"></head>
 
 <body>
+
     <div class="caja1">
         <header id="header"></header>
         <main id="main"></main>
@@ -24,11 +21,35 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
         const header = document.getElementById('header');
         header.innerHTML = headerHTML;
     </script>
-    <script src="js/mainIndex.js"></script>
+    <script id="mainDinamico" src="js/mainIndex.js"></script>
+    <script src="js/mainCarta.js"></script>
+    <script src="js/mainContacto.js"></script>
     <script>
         const main = document.getElementById('main');
-        main.innerHTML = mainHTML;
+        main.innerHTML = mainIndexHTML;
     </script>
+
+    <script>
+
+        // Función para cambiar la etiqueta script
+        function cambiarScript(pagina) {
+            const mainDinamico = document.getElementById('mainDinamico');
+            const main = document.getElementById('main');
+
+            if (pagina === 'inicio') {
+                mainDinamico.src = "js/mainIndex.js";
+                main.innerHTML = mainIndexHTML;
+            } else if (pagina === 'carta') {
+                mainDinamico.src = "js/mainCarta.js";
+                main.innerHTML = mainCartaHTML;
+            } else if (pagina === 'contacto') {
+                mainDinamico.src = "js/mainContacto.js";
+                main.innerHTML = mainContactoHTML;
+            }
+
+        }
+    </script>
+
     <script src="js/footerIndex.js"></script>
     <script>
         const footer = document.getElementById('footer');
@@ -49,7 +70,6 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
         // Ejecuta la función cuando se carga la página y cuando se redimensiona la ventana
         window.addEventListener('load', ajustarAlturaHeader);
         window.addEventListener('resize', ajustarAlturaHeader);
-
 
     </script>
 </body>

@@ -1,8 +1,8 @@
-const mainIndexHTML = `
+const mainCartaHTML = `
   <main>
 
     <div class="centrado">
-      <img src="./img/index/1.jpg">
+      <img src="./img/index/2.jpg">
     </div>
 
   </main>

@@ -10,6 +10,11 @@
         <main id="main"></main>
     </div>
     <footer id="footer"></footer>
+    <script>
+        // Cuando se presiona el botón y deseas quitar el desenfoque
+        const elementoEfectoBlur = document.getElementById('main');
+        elementoEfectoBlur.classList.remove('blur');
+    </script>
 
     <script src="js/headIndex.js"></script>
     <script>
@@ -31,11 +36,13 @@
 
     <script>
 
+        
+
         // Función para cambiar la etiqueta script
         function cambiarScript(pagina) {
             const mainDinamico = document.getElementById('mainDinamico');
             const main = document.getElementById('main');
-
+            main.classList.add('blur');
             if (pagina === 'inicio') {
                 mainDinamico.src = "js/mainIndex.js";
                 main.innerHTML = mainIndexHTML;
@@ -47,7 +54,13 @@
                 main.innerHTML = mainContactoHTML;
             }
 
+            // Retira la clase "blur" después de un breve retraso
+            setTimeout(function () {
+                main.classList.remove('blur'); // Elimina el desenfoque
+            }, 500); // Ajusta el valor del retraso según sea necesario
+
         }
+
     </script>
 
     <script src="js/footerIndex.js"></script>

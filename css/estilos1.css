@@ -6,7 +6,7 @@
 
 body {
     display: block;
-    background-color: black;
+    background-color: #0e0e0e;
 }
 
 .caja1 {
@@ -14,13 +14,22 @@ body {
 }
 
 #header {
-    background-color: black;
+    background-color: #0e0e0e;
 }
 
 #main {
     display: block;
-    background-color: yellow;
+    background-color: #febf26;
     width: 100%;
+}
+
+#main.blur {
+    filter: blur(10px);
+    transition: filter 0.5s ease-out;
+}
+
+#main:not(.blur) {
+    filter: blur(0);
 }
 
 #footer {
@@ -82,24 +91,30 @@ header #logo {
     height: auto;
 }
 
-main .centrado img {
-    width: 100%;
-    height: auto;
-    transition: 0.3s;
+.centrado {
     position: relative;
-    z-index: 2;
+    text-align: center;
 }
 
-.centrado {
-    display: block;
+.centrado img.fondo {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    text-align: center;
-    background-image: url('../img/index/1.jpg');
-    background-size: cover;
-    background-position: center;
-    position: relative;
+    height: 100%;
     z-index: 1;
+    transition: 0.3s;
+    filter: blur(10px);
 }
+
+.centrado img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 2;
+    transition: 0.3s;
+}
+
 
 
 @font-face {

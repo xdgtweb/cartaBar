@@ -21,10 +21,12 @@ body {
     display: block;
     background-color: #febf26;
     width: 100%;
+    max-height: calc(100vh - 40px);
+    overflow: auto;
 }
 
 #main.blur {
-    filter: blur(10px);
+    filter: blur(20px);
     transition: filter 0.5s ease-out;
 }
 
@@ -96,6 +98,29 @@ header #logo {
     text-align: center;
 }
 
+.centrado:nth-child(2) {
+    padding-top: 10px;
+}
+
+.centrado:nth-child(2) label {
+    font-size: 30px;
+    font-family: "letra1";
+}
+
+.centrado:nth-child(3) {
+    padding-top: 15px;
+}
+
+.centrado:nth-child(3) label {
+    display: inline-block;
+    font-size: 20px;
+    font-family: "letra2";
+    letter-spacing: -1.4px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .centrado img.fondo {
     position: absolute;
     top: 0;
@@ -115,11 +140,44 @@ header #logo {
     transition: 0.3s;
 }
 
+.centrado .cajaFlex img
+{
+    width: 35%;
+    height: auto;
+    margin: 10px;
+}
 
+.centrado .cajaFlex label
+{
+    font-family: "letra2";
+    font-size: 20px;
+    letter-spacing: -1.4px;
+}
+
+.cajaFlex
+{
+    display: inline-flex;
+    width: 80%;
+    align-items: center;
+}
 
 @font-face {
     font-family: 'letra1';
     src: url('../fuenteLetra/BeachSound.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'letra2';
+    src: url('../fuenteLetra/Sono-Medium.ttf') format('truetype');
+}
+
+@media (max-width: 900px) {
+    .centrado .cajaFlex label
+    {
+        font-family: "letra2";
+        font-size: 16px;
+        letter-spacing: -1.4px;
+    }
 }
 
 @media (min-width: 1000px) {

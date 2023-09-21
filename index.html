@@ -7,9 +7,16 @@
 
     <div class="caja1">
         <header id="header"></header>
-        <main id="main"></main>
+        <main id="main" class="blur"></main>
     </div>
     <footer id="footer"></footer>
+
+
+
+
+
+
+    
     <script>
         // Cuando se presiona el botón y deseas quitar el desenfoque
         const elementoEfectoBlur = document.getElementById('main');
@@ -36,13 +43,15 @@
 
     <script>
 
-        
+
 
         // Función para cambiar la etiqueta script
         function cambiarScript(pagina) {
-            const mainDinamico = document.getElementById('mainDinamico');
             const main = document.getElementById('main');
-            main.classList.add('blur');
+
+            // Quita la clase "blur" inmediatamente
+            main.classList.remove('blur');
+
             if (pagina === 'inicio') {
                 mainDinamico.src = "js/mainIndex.js";
                 main.innerHTML = mainIndexHTML;
@@ -53,13 +62,10 @@
                 mainDinamico.src = "js/mainContacto.js";
                 main.innerHTML = mainContactoHTML;
             }
-
-            // Retira la clase "blur" después de un breve retraso
-            setTimeout(function () {
-                main.classList.remove('blur'); // Elimina el desenfoque
-            }, 500); // Ajusta el valor del retraso según sea necesario
-
         }
+
+
+
 
     </script>
 

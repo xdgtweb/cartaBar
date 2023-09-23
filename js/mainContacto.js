@@ -1,12 +1,17 @@
 const mainContactoHTML = `
 
-    <div class="centrado">
-      <img class="fondo" src="./img/index/3.jpg">
-      <img src="./img/index/3.jpg">
-    </div>
-    <div class="centrado">
+    <div class="centrado2">
       <a href="">
         <img src="./img/contacto/whatsapp.png">
+      </a>
+      <a href="">
+        <img src="./img/contacto/instagram.png">
+      </a>
+      <a href="">
+        <img src="./img/contacto/telegram.png">
+      </a>
+      <a href="">
+        <img src="./img/contacto/X.png">
       </a>
     </div>
 

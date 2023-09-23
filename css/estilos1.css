@@ -6,7 +6,7 @@
 
 body {
     display: block;
-    background-color: #0e0e0e;
+    background-color: #febf26;
 }
 
 .caja1 {
@@ -47,10 +47,10 @@ header {
     height: inherit;
 }
 
-header:hover {
+/*header:hover {
     width: 150px;
     transition: 0.3s;
-}
+}*/
 
 header nav {
     display: block;
@@ -140,15 +140,13 @@ header #logo {
     transition: 0.3s;
 }
 
-.centrado .cajaFlex img
-{
+.centrado .cajaFlex img {
     width: 35%;
     height: auto;
     margin: 10px;
 }
 
-.centrado .cajaFlex label
-{
+.centrado .cajaFlex label {
     font-family: "letra2";
     font-size: 20px;
     letter-spacing: -1.4px;
@@ -162,8 +160,32 @@ header #logo {
     left: 0;
 }
 
-.cajaFlex
-{
+.centrado2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.centrado2 a img {
+    width: 100px;
+    height: auto;
+    margin: 30px;
+    transition: 0.3s;
+}
+
+.centrado2 a:hover img {
+    width: 120px;
+    height: auto;
+    margin: 30px;
+    transition: 0.3s;
+}
+
+.cajaFlex {
     display: inline-flex;
     width: 80%;
     align-items: center;
@@ -179,9 +201,91 @@ header #logo {
     src: url('../fuenteLetra/Sono-Medium.ttf') format('truetype');
 }
 
-@media (max-width: 900px) {
-    .centrado .cajaFlex label
+@media (max-width: 380px) {
+    header nav button {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-left: 3px !important;
+        margin-right: 3px !important;
+        color: white;
+        font-size: 15px;
+        width: 75px;
+    }
+
+    header {
+        height: 49px !important;
+    }
+
+    .parcheHeader
     {
+        height: 49px !important;
+    }
+}
+
+@media (max-width: 700px) {
+    header {
+        position: fixed;
+        bottom: 39px;
+        left: 0;
+        display: inline-block;
+        width: -webkit-fill-available;
+        transition: 0.3s;
+        margin-bottom: auto;
+        height: 63px !important;
+        z-index: 9;
+    }
+
+    header #logo {
+        display: none;
+    }
+
+    header nav button {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    #footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: -webkit-fill-available;
+    }
+
+    #main {
+        padding-bottom: 70px;
+    }
+
+}
+
+@media (max-width: 800px) {
+    .centrado2 {
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .centrado2 a img {
+        width: 80px;
+        height: auto;
+        margin: 15px;
+        transition: 0.3s;
+    }
+
+    .centrado2 a:hover img {
+        width: 100px;
+        height: auto;
+        margin: 5px;
+        transition: 0.3s;
+    }
+}
+
+@media (max-width: 900px) {
+    .centrado .cajaFlex label {
         font-family: "letra2";
         font-size: 16px;
         letter-spacing: -1.4px;

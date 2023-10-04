@@ -27,7 +27,22 @@ const mainIndexHTML = `
   </div>
   <div class="centrado">
     <div class="cajaFlex">
-      <img src="./img/index/1.jpg">
+      <img src="./img/index/2.jpg">
+      <label>xfghjmhngfdsadfghjkfgdfgjkhgh
+      hgdfhgggfffffffffffffffffhgfdhf</label>
+    </div>
+  </div>
+  <div class="centrado">
+    <div class="cajaFlex">
+      <label>zbxgcdgfhirehsgohrehgeirhgidjhg 
+      fdsdgfd vfgsdgdv fgdfgdfgergds fgefgdrgdsxfg 
+      gfrgfgdgsdggdhtr fgdgrth fgegrt</label>
+      <img src="./img/index/3.jpg">
+    </div>
+  </div>
+  <div class="centrado">
+    <div class="cajaFlex">
+      <img src="./img/index/4.jpg">
       <label>Ningún clásico cordobés falta entre 
       nuestras especialidades, desde el salmorejo 
       hasta las berenjenas califales, pasando por 
@@ -42,7 +57,37 @@ const mainIndexHTML = `
       hasta las berenjenas califales, pasando por 
       el rabo de toro o el flamenquín, todo bien 
       regado por los generosos vinos de la tierra.</label>
-      <img src="./img/index/1.jpg">
+      <img src="./img/index/5.jpg">
+    </div>
+  </div>
+  <div class="centrado">
+    <div class="cajaFlex">
+      <img src="./img/index/6.jpg">
+      <label>Ningún clásico cordobés falta entre 
+      nuestras especialidades, desde el salmorejo 
+      hasta las berenjenas califales, pasando por 
+      el rabo de toro o el flamenquín, todo bien 
+      regado por los generosos vinos de la tierra.</label>
+    </div>
+  </div>
+  <div class="centrado">
+    <div class="cajaFlex">
+      <label>Ningún clásico cordobés falta entre 
+      nuestras especialidades, desde el salmorejo 
+      hasta las berenjenas califales, pasando por 
+      el rabo de toro o el flamenquín, todo bien 
+      regado por los generosos vinos de la tierra.</label>
+      <img src="./img/index/7.jpg">
+    </div>
+  </div>
+  <div class="centrado">
+    <div class="cajaFlex">
+      <img src="./img/index/8.jpg">
+      <label>Ningún clásico cordobés falta entre 
+      nuestras especialidades, desde el salmorejo 
+      hasta las berenjenas califales, pasando por 
+      el rabo de toro o el flamenquín, todo bien 
+      regado por los generosos vinos de la tierra.</label>
     </div>
   </div>
 
